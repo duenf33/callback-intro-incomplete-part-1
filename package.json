@@ -1,0 +1,17 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "autotest": "./node_modules/.bin/supervisor -q -n exit -x ./node_modules/.bin/mocha -- -b",
+  "test": "mocha test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "supervisor": "^0.12.0"
+  }
+}
