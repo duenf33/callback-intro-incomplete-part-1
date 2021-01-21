@@ -27,10 +27,21 @@ const each = function (collection, iterator) {
     result.push(iterator(collection[i]));
   }
   console.log('29')
-  console.log(result.findIndex("ant"))
+  console.log(result)
   return result;
 };
-const indexOf = function (array, target) {};
+const indexOf = function (array, target) {
+  // let result = [];
+  // for(let i = 0; i < array.length; i++){
+
+  // }
+  let number40 = array.findIndex(num => {
+    if (num === 40) {
+      return true;
+    };
+  });
+  return number40;
+};
 const map = function (collection, iterator) {};
 
 module.exports = {
