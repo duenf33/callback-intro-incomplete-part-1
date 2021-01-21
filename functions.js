@@ -26,8 +26,8 @@ const each = function (collection, iterator) {
   for(let i = 0; i < collection.length; i++){
     result.push(iterator(collection[i]));
   }
-  console.log('29')
-  console.log(result)
+  // console.log('29')
+  // console.log(result)
   return result;
 };
 const indexOf = function (array, target) {
@@ -36,9 +36,9 @@ const indexOf = function (array, target) {
 
   // }
   let number40 = array.findIndex(num => {
-    if (num === 40) {
+    if (num === target) {
       return true;
-    };
+    } 
   });
   return number40;
 };
