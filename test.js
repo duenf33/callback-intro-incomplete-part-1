@@ -131,21 +131,21 @@ describe("indexOf", function () {
   });
 });
 
-// describe("map", function () {
-//   it("should apply a function to every value in an array", function () {
-//     var doubledNumbers = map([1, 2, 3], function (num) {
-//       return num * 2;
-//     });
+describe("map", function () {
+  it("should apply a function to every value in an array", function () {
+    var doubledNumbers = map([1, 2, 3], function (num) {
+      return num * 2;
+    });
 
-//     expect(doubledNumbers).to.eql([2, 4, 6]);
-//   });
+    expect(doubledNumbers).to.eql([2, 4, 6]);
+  });
 
-//   it("should produce a brand new array instead of modifying the input array", function () {
-//     var numbers = [1, 2, 3];
-//     var mappedNumbers = map(numbers, function (num) {
-//       return num;
-//     });
+  it("should produce a brand new array instead of modifying the input array", function () {
+    var numbers = [1, 2, 3];
+    var mappedNumbers = map(numbers, function (num) {
+      return num;
+    });
 
-//     expect(mappedNumbers).to.not.equal(numbers);
-//   });
-// });
+    expect(mappedNumbers).to.not.equal(numbers);
+  });
+});

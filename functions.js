@@ -31,10 +31,6 @@ const each = function (collection, iterator) {
   return result;
 };
 const indexOf = function (array, target) {
-  // let result = [];
-  // for(let i = 0; i < array.length; i++){
-
-  // }
   let number40 = array.findIndex(num => {
     if (num === target) {
       return true;
@@ -42,7 +38,13 @@ const indexOf = function (array, target) {
   });
   return number40;
 };
-const map = function (collection, iterator) {};
+const map = function (collection, iterator) {
+  let result = [];
+  for (let i = 0; i < collection.length; i++){
+    result.push(iterator(collection[i]))
+  }
+  return result;
+};
 
 module.exports = {
   identity,
