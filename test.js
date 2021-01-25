@@ -56,54 +56,54 @@ describe("last", function () {
 
 // ///////////
 
-// describe("each", function () {
-//   it("should iterate over arrays, providing access to the element, index, and array itself", function () {
-//     var animals = ["ant", "bat", "cat"];
-//     var iterationInputs = [];
+describe("each", function () {
+  it("should iterate over arrays, providing access to the element, index, and array itself", function () {
+    var animals = ["ant", "bat", "cat"];
+    var iterationInputs = [];
 
-//     each(animals, function (animal, index, list) {
-//       iterationInputs.push([animal, index, list]);
-//     });
+    each(animals, function (animal, index, list) {
+      iterationInputs.push([animal, index, list]);
+    });
 
-//     expect(iterationInputs).to.eql([
-//       ["ant", 0, animals],
-//       ["bat", 1, animals],
-//       ["cat", 2, animals],
-//     ]);
-//   });
+    expect(iterationInputs).to.eql([
+      ["ant", 0, animals],
+      ["bat", 1, animals],
+      ["cat", 2, animals],
+    ]);
+  });
 
-  // it("should only iterate over the array elements, not properties of the array", function () {
-  //   var animals = ["ant", "bat", "cat"];
-  //   var iterationInputs = [];
+  it("should only iterate over the array elements, not properties of the array", function () {
+    var animals = ["ant", "bat", "cat"];
+    var iterationInputs = [];
 
-  //   animals.shouldBeIgnored = "Ignore me!";
+    animals.shouldBeIgnored = "Ignore me!";
 
-  //   each(animals, function (animal, index, list) {
-  //     iterationInputs.push([animal, index, list]);
-  //   });
+    each(animals, function (animal, index, list) {
+      iterationInputs.push([animal, index, list]);
+    });
 
-  //   expect(iterationInputs).to.eql([
-  //     ["ant", 0, animals],
-  //     ["bat", 1, animals],
-  //     ["cat", 2, animals],
-  //   ]);
-  // });
+    expect(iterationInputs).to.eql([
+      ["ant", 0, animals],
+      ["bat", 1, animals],
+      ["cat", 2, animals],
+    ]);
+  });
 
-  // it("should iterate over objects, providing access to the element, index, and object itself", function () {
-  //   var animals = { a: "ant", b: "bat", c: "cat" };
-  //   var iterationInputs = [];
+  it("should iterate over objects, providing access to the element, index, and object itself", function () {
+    var animals = { a: "ant", b: "bat", c: "cat" };
+    var iterationInputs = [];
 
-  //   each(animals, function (animal, key, object) {
-  //     iterationInputs.push([animal, key, object]);
-  //   });
+    each(animals, function (animal, key, object) {
+      iterationInputs.push([animal, key, object]);
+    });
 
-  //   expect(iterationInputs).to.eql([
-  //     ["ant", "a", animals],
-  //     ["bat", "b", animals],
-  //     ["cat", "c", animals],
-  //   ]);
-  // });
-// });
+    expect(iterationInputs).to.eql([
+      ["ant", "a", animals],
+      ["bat", "b", animals],
+      ["cat", "c", animals],
+    ]);
+  });
+});
 
 describe("indexOf", function () {
   it("should find 40 in the list", function () {
